@@ -10,4 +10,5 @@ class Post extends Model
     use HasFactory;
 
     public $someproperty;
+    public $guarded = false; // разрешил внесение в базу
 }
