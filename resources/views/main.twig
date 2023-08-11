@@ -19,11 +19,14 @@
 
 <main>
     <section>
-        <p>Reading</p>
-        <a>{{ post }}</a>
-        <a1>{{ post.title }}</a1>
-        <a2>{{ post.content }}</a2>
+        <p>Post is create!</p>
+        @foreach ($posts as $post)
+        <h1>{{ $post->title }}</h1>
+        <h2>{{ $post->content }}</h2>
+        @endforeach
     </section>
+
+    {{ $posts->links() }}
     <br>
     <section>
         <h1>Update</h1>

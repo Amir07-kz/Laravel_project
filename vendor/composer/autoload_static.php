@@ -533,6 +533,7 @@ class ComposerStaticInitd997436177b199e6f59a28c95e1b2be3
         'App\\Http\\Controllers\\FirstController' => __DIR__ . '/../..' . '/app/Http/Controllers/FirstController.php',
         'App\\Http\\Controllers\\MainPageController' => __DIR__ . '/../..' . '/app/Http/Controllers/MainPageController.php',
         'App\\Http\\Controllers\\PostController' => __DIR__ . '/../..' . '/app/Http/Controllers/PostController.php',
+        'App\\Http\\Controllers\\ReadPageController' => __DIR__ . '/../..' . '/app/Http/Controllers/ReadPageController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',

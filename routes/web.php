@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PostController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,14 +20,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'App\Http\Controllers\MainPageController@main');
 
-Route::get('/first', 'App\Http\Controllers\FirstController@first');
+Route::get('/posts', 'App\Http\Controllers\PostController@read');
 
-Route::get('/second', 'App\Http\Controllers\PostController@second');
+Route::get('/post', [PostController::class, 'redirect'])->name('post.redirect');
 
-Route::get('/read', 'App\Http\Controllers\ReadPageController@read');
+Route::post('/post/create', [PostController::class, 'create'])->name('post.create');
 
-Route::get('/create', 'App\Http\Controllers\PostController@create');
-
-Route::post('/create/post', function () {
-    return 'okay';
-});
